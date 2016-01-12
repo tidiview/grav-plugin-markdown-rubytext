@@ -3,7 +3,7 @@ version: 0.7.0
 description: "Adds ability to output ruby tag text in Markdown"
 icon:  asterisk
 author:
-  name: François Vidit
+  name: François Vidit                       //special thanks to @Rhukster and @Sommerregen for support
   email: francois.vidit@francois-vidit.fr
   url: http://francois-vidit.fr
 license: MIT
