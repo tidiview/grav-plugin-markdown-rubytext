@@ -2,4 +2,5 @@
 ## 01/12/2016
 
 1. [](#new)
-    * ChangeLog started...
+ * added picture of standart display
+ * ChangeLog started...
