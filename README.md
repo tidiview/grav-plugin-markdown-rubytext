@@ -33,4 +33,4 @@ Will produce the following HTML:
 
 Standart display:
 
-[this-is-nihongo-and-this-is-kan](this-is-nihongo-and-this-is-kan.PNG)
+![this-is-nihongo-and-this-is-kan](this-is-nihongo-and-this-is-kan.PNG)
