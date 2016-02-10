@@ -31,6 +31,6 @@ Will produce the following HTML:
     This is <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> and this is <ruby><rb>漢</rb><rt>ㄏㄢˋ</rt></ruby>.
 ```
 
-standart display:
+Standart display:
 
-![nihongo](nihongo.PNG) and ![kan](kan.PNG)
+This is  ![nihongo](nihongo.PNG)  and this is  ![kan](kan.PNG)
