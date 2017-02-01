@@ -18,7 +18,9 @@ Simply copy the `user/plugins/markdown-color/markdown-rubytext.yaml` into `user/
 enabled: true
 ```
 
-# Examples
+#Usage
+
+In your markdown file:
 
 ```
 This is {r}日本語{/r:にほんご} and this is {r}漢{/r:ㄏㄢˋ}.
@@ -33,3 +35,9 @@ This is <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> and this is <ruby><
 Standart display:
 
 ![this-is-nihongo-and-this-is-kan](this-is-nihongo-and-this-is-kan.PNG)
+
+## important note:
+This plugin will not work without at least one space before: `space` + `{r}日本語{/r:にほんご}` in the markdown file.
+
+## future development:
+to make possible the same uotput without any `space` before the regular expression.
