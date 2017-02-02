@@ -40,4 +40,4 @@ Standart display:
 This plugin will not work without at least one space before: `space` + `{r}日本語{/r:にほんご}` in the markdown file.
 
 ## future development:
-to make possible the same uotput without any `space` before the regular expression.
+to make possible the same output without any `space` before the regular expression.
