@@ -35,9 +35,3 @@ This is <ruby><rb>日本語</rb><rp>（</rp><rt>にほんご</rt><rp>）</rp></r
 Standart display:
 
 ![this-is-nihongo-and-this-is-kan](this-is-nihongo-and-this-is-kan.PNG)
-
-## important note:
-This plugin will not work without at least one space before: `space` + `{r}日本語{/r:にほんご}` in the markdown file.
-
-## future development:
-to make possible the same output without any `space` before the regular expression.
