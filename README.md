@@ -29,7 +29,7 @@ This is {r}日本語{/r:にほんご} and this is {r}漢{/r:ㄏㄢˋ}.
 Will produce the following HTML:
 
 ```
-This is <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> and this is <ruby><rb>漢</rb><rt>ㄏㄢˋ</rt></ruby>.
+This is <ruby><rb>日本語</rb><rp>（</rp><rt>にほんご</rt><rp>）</rp></ruby> and this is <ruby><rb>漢</rb><rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>.
 ```
 
 Standart display:
