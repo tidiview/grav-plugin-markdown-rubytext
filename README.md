@@ -18,7 +18,7 @@ Simply copy the `user/plugins/markdown-color/markdown-rubytext.yaml` into `user/
 enabled: true
 ```
 
-#Usage
+# Usage
 
 In your markdown file:
 
