@@ -1,3 +1,9 @@
+# v1.2.0
+## 17/08/2017
+[](#new)
+   * improved regex syntax so that space is no longer needed before {r}..{/r:..} (special thanks to: huesersohn)
+   * changed CHANGELOG to show changes of v1.1.0
+
 # v1.1.0
 ## 01/02/2017
 [](#new)
