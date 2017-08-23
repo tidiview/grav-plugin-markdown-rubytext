@@ -1,11 +1,11 @@
 name: Markdown RubyText
-version: 1.1.0
+version: 1.2.0
 description: "Adds ability to output ruby tag text in Markdown"
 icon:  language
 author:
   name: François VIDIT
   email: francois.vidit@laposte.net
-  url: http://francois-vidit.com
+  url: https://francois-vidit.com
 license: MIT
 
 form:
