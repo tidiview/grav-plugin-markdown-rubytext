@@ -1,7 +1,10 @@
 <?php
 namespace Grav\Plugin;
+
 use \Grav\Common\Plugin;
 use RocketTheme\Toolbox\Event\Event;
+
+
 class MarkdownRubyTextPlugin extends Plugin
 {
     /**
@@ -10,9 +13,31 @@ class MarkdownRubyTextPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
+            'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
             'onMarkdownInitialized' => ['onMarkdownInitialized', 0],
         ];
     }
+
+    /**
+     * Add current directory to twig lookup paths.
+     */
+    public function onTwigTemplatePaths()
+    {
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
+    }
+
+    /**
+     * Initialize configuration
+     */
+    public function onShortcodeHandlers()
+    {
+        $this->grav['shortcode']->registerAllShortcodes(__DIR__.'/shortcodes');
+    }
+
+    /**
+     * old implementation without shortcode
+     */
     public function onMarkdownInitialized(Event $event)
     {
         $markdown = $event['markdown'];
@@ -37,7 +62,7 @@ class MarkdownRubyTextPlugin extends Plugin
                             'name' => 'rp',
                             'text' => '（',
                             ),
-                        array(    
+                        array(
                             'name' => 'rt',
                             'text' => $matches[2],
                             ),
