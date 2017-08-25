@@ -35,7 +35,3 @@ This is <ruby><rb>日本語</rb><rp>（</rp><rt>にほんご</rt><rp>）</rp></r
 Standart display:
 
 ![this-is-nihongo-and-this-is-kan](this-is-nihongo-and-this-is-kan.PNG)
-
-# Future Goal
-
-Integrate this plug-in in the shortcode structure.
