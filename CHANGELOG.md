@@ -1,3 +1,8 @@
+# 1.3.0
+## 02/09/2017
+[](#fix)
+   * improved UTF-8 compatibility with php local development for multibytes strings in function pregmatch
+
 # v1.2.0
 ## 17/08/2017
 [](#new)
