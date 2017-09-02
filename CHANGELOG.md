@@ -1,3 +1,8 @@
+# 1.3.1
+## 03/09/2017
+[](#new)
+   * added links to demo page, repo and changelog
+
 # 1.3.0
 ## 02/09/2017
 [](#fix)
