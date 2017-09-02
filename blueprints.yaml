@@ -6,6 +6,11 @@ author:
   name: François VIDIT
   email: francois.vidit@laposte.net
   url: https://francois-vidit.com
+homepage: https://github.com/tidiview/grav-plugin-markdown-rubytext
+demo: https://francois-vidit.com/blog/ja/onnadaigaku
+docs: https://github.com/tidiview/grav-plugin-markdown-rubytext/README.md
+keywords: grav, plugin, markdown, "HTML <ruby> Tag", html5
+bugs: https://github.com/tidiview/grav-plugin-markdown-rubytext/issues
 license: MIT
 
 form:
