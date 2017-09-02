@@ -20,7 +20,7 @@ class MarkdownRubyTextPlugin extends Plugin
         $markdown->addInlineType('{', 'RubyText');
         // Add function to handle this
         $markdown->inlineRubyText = function($excerpt) {
-            if (preg_match('/\{r}([^\s{]+){\/r:([^\s}]+)}/', $excerpt['text'], $matches))
+            if (preg_match('/(*UTF8)\{r}([^\s{]+){\/r:([^\s}]+)}/', $excerpt['text'], $matches))
             {
                 return
                 array(
