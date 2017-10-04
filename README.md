@@ -20,6 +20,8 @@ enabled: true
 
 # Usage
 
+## simple ruby
+
 In your markdown file:
 
 ```
@@ -36,27 +38,21 @@ Standart display:
 
 ![this-is-nihongo-and-this-is-kan](this-is-nihongo-and-this-is-kan.PNG)
 
-# Futures goals (difficult, please contribute)
-
-## make serial ruby possible:
+## serial ruby
 
 In your markdown file, __2 or more successives shortcodes__:
 
 ```
-主人公ルキウスが{r}驢{/r:ロ}{r}馬{/r:バ}に変えられる
+This is {r}日(に)本(ほん)語(ご){/r} and this is {r}漢(ㄏㄢˋ){/r}.
 ```
 
-Would produce the following HTML, nested by a __single `ruby` HTML tag__:
+Will produce the following HTML, nested by a __single `ruby` HTML tag__:
 
 ```
-主人公ルキウスが<ruby><rb>驢</rb><rp>（</rp><rt>ロ</rt><rp>）</rp><rb>馬</rb><rp>（</rp><rt>バ</rt><rp>）</rp></ruby>に変えられる
+This is <ruby><rb>日</rb><rp>（</rp><rt>に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt>ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt>ご</rt><rp>）</rp></ruby> and this is <ruby><rb>漢</rb><rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>.
 ```
 
-Possibility to consider a __different specific pattern__ like for instance:
-
-```
-主人公ルキウスが{r}驢{r:ロ}馬{/r:バ}に変えられる
-```
+# Future goal (difficult, please contribute)
 
 ## add possibility to enabled from page
 
