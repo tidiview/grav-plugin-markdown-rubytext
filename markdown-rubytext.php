@@ -48,6 +48,27 @@ class MarkdownRubyTextPlugin extends Plugin
                         )
                     )
                 );
+            } elseif (preg_match('/(*UTF8)\{r}([^\s{]+){\/r}/', $excerpt['text'], $matches))
+            {
+                $matchesminusun = array_slice($matches,1);
+                $strings = rtrim($matchesminusun[0],')');
+                $extract = explode (')',$strings);
+                $out = array();
+
+                foreach ($extract as $value) {
+                $value = explode('(',$value);
+                $out = array_merge($out,array(array('name'=>'rb','text'=>$value[0]),array('name'=>'rp','text'=>'('),array('name'=>'rt','text'=>$value[1]),array('name'=>'rp','text'=>')')));
+                };
+
+                return
+                array(
+                  'extent' => strlen($matches[0]),
+                  'element' => array(
+                    'name' => 'ruby',
+                    'handler' => 'elements',
+                    'text' => $out
+                    )
+                );
             }
         };
     }
