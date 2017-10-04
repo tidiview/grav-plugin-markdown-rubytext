@@ -1,3 +1,8 @@
+# 2.0.0
+## 04/10/2017
+[](#new)
+   * added possibility to make serial ruby
+
 # 1.3.1
 ## 03/09/2017
 [](#new)
