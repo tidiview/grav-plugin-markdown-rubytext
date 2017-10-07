@@ -1,3 +1,13 @@
+# 3.0.0
+## 07/10/2017
+[](#new)
+   * added possibility to set lang attributes to \<ruby\> and \<rt\> HTML tags.
+   * BREAKING CHANGE: removed valid syntax up until v1.3.1 `{r}text{/r:annotation}`
+   
+   \>\>\> UPDATING CAUTION: it won't work anymore!
+   
+   NEW SYNTAX is now: `{r}text(annotation)text2{annotation2)text3{annotation3}{/r}`
+
 # 2.0.0
 ## 04/10/2017
 [](#new)
