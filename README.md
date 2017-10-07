@@ -75,7 +75,7 @@ OR
 
 __Important note__:
 
-To be valid, lang attributes has to be of __2 or 3 letters maximum__.
+To be valid, each lang attribute has to be of __2 *or* 3 letters maximum__.
 
 # Future goal (difficult, please contribute)
 
