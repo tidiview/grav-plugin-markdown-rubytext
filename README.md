@@ -73,7 +73,7 @@ OR
 
 2. [ISO 639-2 Language Codes List](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes)
 
-Important note:
+__Important note__:
 
 To be valid, lang attributes has to be of __2 or 3 letters maximum__.
 
