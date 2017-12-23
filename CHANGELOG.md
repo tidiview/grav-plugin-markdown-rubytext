@@ -1,3 +1,8 @@
+# 3.1.0
+## 07/10/2017
+[](#improved)
+   * improved HTML output to get rid of unecessary <rb> tag
+
 # 3.0.0
 ## 07/10/2017
 [](#new)
