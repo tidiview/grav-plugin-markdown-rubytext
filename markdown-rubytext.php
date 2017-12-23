@@ -20,34 +20,32 @@ class MarkdownRubyTextPlugin extends Plugin
         $markdown->addInlineType('{', 'RubyText');
         // Add function to handle this
         $markdown->inlineRubyText = function($excerpt) {
-            if (preg_match('/(*UTF8)\{r}([^\s{]+){\/r}|{r=([a-z]{2,3})\/([a-z]{2,3})}([^\s{]+){\/r}/', $excerpt['text'], $matches))
+            if (preg_match('/(*UTF8)\{r}([^\s{]+){\/r}|{r=([a-z]{2,3})\/([a-z]{2,3})}([^\s{]+){\/r}/', $excerpt['text'], $match))
             {
-                $matchesminusun = array_slice($matches,1);
-                $rubyattribute = 'ruby';
-                $rbatttribute = 'rt';
-                if ($matchesminusun[0] == "") {
-                    $matchesminusun[0] = $matchesminusun[3];
-                    $rubyattribute = 'ruby lang="'.$matchesminusun[1].'"';
-                    $rbatttribute = 'rt lang="'.$matchesminusun[2].'"';
+                $matchright = array_slice($match,1);
+                $rubyatt = 'ruby';
+                $rbatt = 'rt';
+                if ($matchright[0] == "") {
+                    $matchright[0] = $matchright[3];
+                    $rubyatt = 'ruby lang="'.$matchright[1].'"';
+                    $rbatt = 'rt lang="'.$matchright[2].'"';
                 };
-                $strings = rtrim($matchesminusun[0],')');
-                $extract = explode (')',$strings);
-                $out = array();
+                $matchleftright = rtrim($matchright[0],')');
+                $extract = explode (')',$matchleftright);
+                $out = "";
 
                 foreach ($extract as $value) {
                 $value = explode('(',$value);
-                $out = array_merge($out,array(array('name'=>'rb','text'=>$value[0]),array('name'=>'rp','text'=>'('),array('name'=>$rbatttribute,'text'=>$value[1]),array('name'=>'rp','text'=>')')));
+                $out .= $value[0].'<rp>(</rp><'.$rbatt.'>'.$value[1].'</rb><rp>)</rp>';
                 };
-
-                return
-                array(
-                  'extent' => strlen($matches[0]),
+                $totout = array(
+                  'extent' => strlen($match[0]),
                   'element' => array(
-                    'name' => $rubyattribute,
-                    'handler' => 'elements',
-                    'text' => $out,
-                    )
-                );
+                    'name' => $rubyatt,
+                    'text' => $out
+                    ));
+                return
+                $totout;
             }
         };
     }
