@@ -32,8 +32,8 @@ and this is {r}漢(ㄏㄢˋ){/r}.
 Will produce the __following HTML__:
 
 ```
-This is <ruby><rb>日</rb><rp>（</rp><rt>に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt>ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt>ご</rt><rp>）</rp></ruby> 
-and this is <ruby><rb>漢</rb><rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>.
+This is <ruby>日<rp>（</rp><rt>に</rt><rp>）</rp>本<rp>（</rp><rt>ほん</rt><rp>）</rp>語<rp>（</rp><rt>ご</rt><rp>）</rp></ruby> 
+and this is <ruby>漢<rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>.
 ```
 
 Standart display:
@@ -55,11 +55,11 @@ and this is {r=ja/ber}アマーズィーグ(ⴰⵎⴰⵣⵉⵖ){/r}族.
 Will produce the following HTML, nested by a __single `ruby` HTML tag__:
 
 ```
-This is <ruby lang="ja"><rb>メダウルッシュ</rb><rp>(</rp><rt lang="ar">مداوروش</rt><rp>)</rp></ruby>, 
-this is <ruby lang="ja"><rb>ピエル</rb><rp>(</rp><rt lang="fr">Pierre</rt><rp>)</rp><rb>・</rb><rp>(</rp><rt lang="fr"></rt><rp>)</rp><rb>グリマル</rb><rp>(</rp><rt lang="fr">GRIMAL</rt><rp>)</rp></ruby>,
-this is <ruby lang="ja"><rb>トロイア</rb><rp>(</rp><rt lang="grc">Τρωάς</rt><rp>)</rp></ruby>,
-this is <ruby><rb>漢</rb><rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>,
-and this is <ruby lang="ja"><rb>アマーズィーグ</rb><rp>(</rp><rt lang="ber">ⴰⵎⴰⵣⵉⵖ</rt><rp>)</rp></ruby>.
+This is <ruby lang="ja">メダウルッシュ<rp>(</rp><rt lang="ar">مداوروش</rt><rp>)</rp></ruby>, 
+this is <ruby lang="ja">ピエル<rp>(</rp><rt lang="fr">Pierre</rt><rp>)</rp>・<rp>(</rp><rt lang="fr"></rt><rp>)</rp><rb>グリマル<rp>(</rp><rt lang="fr">GRIMAL</rt><rp>)</rp></ruby>,
+this is <ruby lang="ja">トロイア<rp>(</rp><rt lang="grc">Τρωάς</rt><rp>)</rp></ruby>,
+this is <ruby>漢<rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>,
+and this is <ruby lang="ja">アマーズィーグ<rp>(</rp><rt lang="ber">ⴰⵎⴰⵣⵉⵖ</rt><rp>)</rp></ruby>.
 ```
 
 Standart display:
