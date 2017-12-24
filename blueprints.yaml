@@ -1,5 +1,5 @@
 name: Markdown RubyText
-version: 3.0.0
+version: 3.1.0
 description: "Adds ability to output ruby tag text in Markdown"
 icon:  language
 author:
@@ -7,9 +7,9 @@ author:
   email: francois.vidit@laposte.net
   url: https://francois-vidit.com
 homepage: https://github.com/tidiview/grav-plugin-markdown-rubytext
-demo: https://francois-vidit.com/blog/ja/onnadaigaku
+demo: https://francois-vidit.com/blog/ja/psyche
 docs: https://github.com/tidiview/grav-plugin-markdown-rubytext/README.md
-keywords: grav, plugin, markdown, "HTML <ruby> Tag", html5
+keywords: grav, plugin, markdown, "HTML <ruby> Tag", html5, ruby annotation
 bugs: https://github.com/tidiview/grav-plugin-markdown-rubytext/issues
 license: MIT
 
