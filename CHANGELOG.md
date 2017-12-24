@@ -1,7 +1,7 @@
 # 3.1.0
 ## 24/12/2017
 [](#improved)
-   * improved HTML output to get rid of unecessary \<rb\> tag.
+   * improved efficiency of HTML output getting rid of unecessary \<rb\> HTML tag.
 
 # 3.0.0
 ## 07/10/2017
