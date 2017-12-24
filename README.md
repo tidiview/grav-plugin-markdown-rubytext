@@ -46,9 +46,13 @@ In your markdown file, it is now also possible to set __lang attributes__ like:
 
 ```
 This is {r=ja/ar}メダウルッシュ(مداوروش){/r},
+
 this is {r=ja/fr}ピエル(Pierre)・()グリマル(GRIMAL){/r},
+
 this is {r=ja/grc}トロイア(Τρωάς){/r},
+
 this is {r}漢(ㄏㄢˋ){/r},
+
 and this is {r=ja/ber}アマーズィーグ(ⴰⵎⴰⵣⵉⵖ){/r}族.
 ```
 
@@ -56,9 +60,13 @@ Will produce the following HTML, nested by a __single `ruby` HTML tag__:
 
 ```
 This is <ruby lang="ja">メダウルッシュ<rp>(</rp><rt lang="ar">مداوروش</rt><rp>)</rp></ruby>, 
+
 this is <ruby lang="ja">ピエル<rp>(</rp><rt lang="fr">Pierre</rt><rp>)</rp>・<rp>(</rp><rt lang="fr"></rt><rp>)</rp><rb>グリマル<rp>(</rp><rt lang="fr">GRIMAL</rt><rp>)</rp></ruby>,
+
 this is <ruby lang="ja">トロイア<rp>(</rp><rt lang="grc">Τρωάς</rt><rp>)</rp></ruby>,
+
 this is <ruby>漢<rp>（</rp><rt>ㄏㄢˋ</rt><rp>）</rp></ruby>,
+
 and this is <ruby lang="ja">アマーズィーグ<rp>(</rp><rt lang="ber">ⴰⵎⴰⵣⵉⵖ</rt><rp>)</rp></ruby>.
 ```
 
