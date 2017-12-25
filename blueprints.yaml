@@ -8,7 +8,7 @@ author:
   url: https://francois-vidit.com
 homepage: https://github.com/tidiview/grav-plugin-markdown-rubytext
 demo: https://francois-vidit.com/blog/ja/psyche
-docs: https://github.com/tidiview/grav-plugin-markdown-rubytext/README.md
+docs: https://github.com/tidiview/grav-plugin-markdown-rubytext/blob/master/README.md
 keywords: grav, plugin, markdown, "HTML <ruby> Tag", html5, ruby annotation
 bugs: https://github.com/tidiview/grav-plugin-markdown-rubytext/issues
 license: MIT
