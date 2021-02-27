@@ -1,28 +1,36 @@
-name: Markdown RubyText
-version: 3.1.4
-description: "Adds ability to output ruby tag text in Markdown"
-icon:  language
+name: Markdown Rubytext
+slug: markdown-rubytext
+type: plugin
+version: 3.2.0
+description: Adds ability to output <ruby> HTML tag text with a shortcode in Markdown. Pratical for extreme oriental laguages like japanese or chinese as to annotate pronunciation of ideograms.
+icon: plug
 author:
-  name: François VIDIT
-  email: francois.vidit@laposte.net
-  url: https://francois-vidit.com
+  name: Francois VIDIT
+  email: francois.vidit@francois-vidit.com
 homepage: https://github.com/tidiview/grav-plugin-markdown-rubytext
-demo: https://francois-vidit.com/blog/ja/psyche
-docs: https://github.com/tidiview/grav-plugin-markdown-rubytext/blob/master/README.md
-keywords: grav, plugin, markdown, "HTML <ruby> Tag", html5, ruby annotation
+demo: https://francois-vidit.com
+keywords: grav
 bugs: https://github.com/tidiview/grav-plugin-markdown-rubytext/issues
+docs: https://github.com/tidiview/grav-plugin-markdown-rubytext/blob/develop/README.md
 license: MIT
 
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
 form:
-  validation: strict
+  validation: loose
   fields:
     enabled:
       type: toggle
-      label: Plugin status
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
       highlight: 1
       default: 0
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+    text_var:
+      type: text
+      label: PLUGIN_MARKDOWN_RUBYTEXT.TEXT_VARIABLE
+      help: PLUGIN_MARKDOWN_RUBYTEXT.TEXT_VARIABLE_HELP

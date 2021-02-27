@@ -1,3 +1,8 @@
+# 3.2.0
+## 27/02/2021
+[](#new)
+   * adapted compatibility with Grav 1.7
+
 # 3.1.4
 ## 25/12/2017
 [](#improved)
