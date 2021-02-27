@@ -23,8 +23,8 @@ class MarkdownRubytextPlugin extends Plugin
     public static function getSubscribedEvents(): array
     {
         return [
-            'onPluginsInitialized' => [
-                ['onPluginsInitialized', 0]
+            'onMarkdownInitialized' => [
+                ['onMarkdownInitialized', 0]
             ]
         ];
     }
@@ -42,16 +42,40 @@ class MarkdownRubytextPlugin extends Plugin
     /**
      * Initialize the plugin
      */
-    public function onPluginsInitialized(): void
+    public function onMarkdownInitialized(Event $event)
     {
-        // Don't proceed if we are in the admin plugin
-        if ($this->isAdmin()) {
-            return;
-        }
+        $markdown = $event['markdown'];
+        // Initialize Text example
+        $markdown->addInlineType('{', 'RubyText');
+        // Add function to handle this
+        $markdown->inlineRubyText = function($excerpt) {
+            if (preg_match('/(*UTF8)\{r}([^\s{]+){\/r}|{r=([a-z]{2,3})\/([a-z]{2,3})}([^\s{]+){\/r}/', $excerpt['text'], $match))
+            {
+                $matchright = array_slice($match,1);
+                $rubyatt = 'ruby';
+                $rbatt = 'rt';
+                if ($matchright[0] == "") {
+                    $matchright[0] = $matchright[3];
+                    $rubyatt = 'ruby lang="'.$matchright[1].'"';
+                    $rbatt = 'rt lang="'.$matchright[2].'"';
+                };
+                $matchleftright = rtrim($matchright[0],')');
+                $extract = explode (')',$matchleftright);
+                $out = "";
 
-        // Enable the main events we are interested in
-        $this->enable([
-            // Put your main events here
-        ]);
+                foreach ($extract as $value) {
+                $value = explode('(',$value);
+                $out .= $value[0].'<rp>(</rp><'.$rbatt.'>'.$value[1].'</rb><rp>)</rp>';
+                };
+                $totout = array(
+                  'extent' => strlen($match[0]),
+                  'element' => array(
+                    'name' => $rubyatt,
+                    'text' => $out
+                    ));
+                return
+                $totout;
+            }
+        };
     }
 }
